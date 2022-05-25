@@ -1,0 +1,29 @@
+GET http://localhost:3000/users
+###
+
+GET http://localhost:3000/users/628dfb52bd7b1f0d40a92f02
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name":"User One",
+    "username": "user_one",
+    "password":"User Forty Two"
+}
+
+###
+PATCH http://localhost:3000/users/628df8c4c83ed420bcdd8c4e
+Content-Type: application/json
+
+{
+    "name" : "User Three",
+    "usename": "user_three",
+    "password":"User Three's Password"
+}
+
+###
+DELETE http://localhost:3000/users/628dfb52bd7b1f0d40a92f02
+
+
